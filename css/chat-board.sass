@@ -1,0 +1,178 @@
+$font: 'Montserrat', sans-serif
+$fs: 12px
+$purple: #4e50b8
+$orange: #f0916e
+$gray: #414064
+
+@mixin svg-30
+  width: 30px
+  height: 30px
+  background-color: white
+  border: 0
+  fill: #aaa
+
+@mixin svg-20
+  width: 25px
+  height: 25px
+  border: 0
+  border-radius: 0
+  background-color: white
+  fill: #aaa
+  padding: 5px
+
+@mixin before-1-on
+  content: "\2713"
+  color: green
+
+@mixin before-1-off
+  content: "\2713"
+  color: gray
+
+@mixin before-2-on
+  content: "\25CF"
+  color: green
+
+@mixin before-1-off
+  content: "\25CF"
+  color: gray
+
+*
+  box-sizing: border-box
+
+html,
+body
+  font-family: $font
+  font-size: $fs
+  background-color: #ddd
+  text-transform: capitalize
+
+.chat-container
+  overflow: hidden
+  height: 100%
+
+main
+  max-height: 100%
+  .main-section
+    height: 548px
+    max-height: 548px
+    max-width: 100%
+  svg
+    @include svg-20
+.aside-left
+  height: 100%
+
+.inbox
+  background-color: white
+  height: 100%
+  max-height: 100%
+  padding-right: 5px
+  margin-right: 5px
+  border-right: 1px solid #aaa
+  border-radius: 0
+  overflow: hidden
+  .inbox-main
+    overflow: scroll
+    height: fit-content
+    &::-webkit-scrollbar
+      display: none
+    .ib-message
+      margin: 12px 0
+      padding-bottom: 10px
+      border-bottom: 1px solid #aaa
+      border-radius: 0
+  .inbox-header
+    height: fit-content
+    border-bottom: 1px solid #aaa
+    padding-bottom: 5px
+    border-radius: 0
+    .search-bar
+      outline: none
+      width: calc(100% - 55px)
+      border: 0
+    .write-svg
+      background-color: $purple
+      border-radius: 5px
+      fill: white
+  .inbox-footer
+    background-color: white
+    height: fit-content
+  .status
+    &::before
+      @include before-1-on
+
+.chat-box
+  background-color: white
+  height: 100%
+  .chat-box-header
+    height: fit-content
+    border-bottom: 1px solid #aaa
+    border-radius: 0
+    .p-info
+      width: calc(100% - 55px)
+      padding: 0
+      span
+        width: fit-content
+        color: #aaa
+        padding: 0
+      .status
+        &::before
+          @include before-2-on
+  .chat-box-container
+    margin-top: 4%
+    height: 100%
+    .pp
+      border-radius: 100%
+      overflow: hidden
+    .message-left, .message-right
+      margin-top: 4%
+      width: 90%
+      span
+        text-indent: 10px
+        font-weight: 600
+    .message-left
+      margin-right: 10%
+      span
+        background-color: rgba(78, 80, 184, 0.3)
+
+    .message-right
+      margin-left: 10%
+      span
+        background-color: rgba(0, 65, 64, 0.2)
+  .chat-box-footer
+    background-color: white
+    height: fit-content
+    margin-top: 10px
+    .send-message
+      width: calc(100% - 55px)
+      padding: 0 10px
+      outline: none
+      border: 0
+    .up-arrow
+      background-color: $purple
+      border-radius: 6px
+      padding: 3px
+      svg
+        background-color: transparent
+        fill: white
+.ms-section
+  max-width: 100%
+
+@media only screen and (max-width : 800px)
+  .aside-left
+    display: none !important
+
+  .inbox
+    min-width: 195px
+
+  .personal-container
+    margin-top: 80px
+    padding: 0
+    max-width: 472px
+    svg
+      margin: 0
+      width: 40px
+      height: 40px
+
+  .special-mobile
+    svg
+    margin: 0
