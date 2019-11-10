@@ -259,7 +259,7 @@ main img, main .layer {
   border: 0;
   border-radius: 5px;
   background-color: #4e50b8;
-  background-color-margin: 0;
+  margin: 0;
 }
 .ms-article .layer-lower .lower-mid .lower-mid-right button {
   width: 45px;
