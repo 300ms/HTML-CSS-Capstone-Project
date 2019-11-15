@@ -14,6 +14,7 @@ body {
 .chat-container {
   overflow: hidden;
   height: 100%;
+  width: 100% !important;
 }
 
 main {
@@ -32,10 +33,6 @@ main svg {
   background-color: white;
   fill: #aaa;
   padding: 5px;
-}
-
-.aside-left {
-  height: 100%;
 }
 
 .inbox {
@@ -162,12 +159,12 @@ main svg {
 }
 
 @media only screen and (max-width: 800px) {
-  .aside-left {
-    display: none !important;
-  }
-
   .inbox {
     min-width: 195px;
+  }
+
+  .aside-left {
+    display: none !important;
   }
 
   .personal-container {

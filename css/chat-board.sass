@@ -49,7 +49,7 @@ body
 .chat-container
   overflow: hidden
   height: 100%
-
+  width: 100% !important
 main
   max-height: 100%
   .main-section
@@ -58,8 +58,7 @@ main
     max-width: 100%
   svg
     @include svg-20
-.aside-left
-  height: 100%
+
 
 .inbox
   background-color: white
@@ -158,11 +157,11 @@ main
   max-width: 100%
 
 @media only screen and (max-width : 800px)
-  .aside-left
-    display: none !important
-
   .inbox
     min-width: 195px
+
+  .aside-left
+    display: none !important
 
   .personal-container
     margin-top: 80px
