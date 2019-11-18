@@ -58,7 +58,11 @@ main svg {
   border-bottom: 1px solid #aaa;
   border-radius: 0;
 }
+.inbox .inbox-main .ib-message .p-info {
+  padding: 5px;
+}
 .inbox .inbox-header {
+  position: relative;
   height: fit-content;
   border-bottom: 1px solid #aaa;
   padding-bottom: 5px;
@@ -106,8 +110,8 @@ main svg {
   color: green;
 }
 .chat-box .chat-box-container {
-  margin-top: 4%;
-  height: 100%;
+  height: 87%;
+  overflow-y: scroll;
 }
 .chat-box .chat-box-container .pp {
   border-radius: 100%;
@@ -158,6 +162,12 @@ main svg {
   max-width: 100%;
 }
 
+.chat-board-link {
+  right: 0;
+  top: 0;
+  margin-right: 4px;
+}
+
 @media only screen and (max-width: 800px) {
   .inbox {
     min-width: 195px;
@@ -168,7 +178,7 @@ main svg {
   }
 
   .personal-container {
-    margin-top: 80px;
+    margin-top: 35px;
     padding: 0;
     max-width: 472px;
   }

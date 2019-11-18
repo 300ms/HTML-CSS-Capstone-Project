@@ -393,6 +393,20 @@ main img, main .layer {
   fill: #f0916e;
 }
 
+h2, h3, h6 {
+  display: none;
+}
+
+.chat-board-link {
+  position: absolute;
+  float: left;
+  width: 20px;
+  height: 20px;
+  margin: 0 9px 0 0;
+  padding: 0;
+  border-width: 0;
+}
+
 @media only screen and (max-width: 800px) {
   section {
     width: 100% !important;
@@ -405,7 +419,6 @@ main img, main .layer {
     justify-content: flex-start;
   }
   main .main-section {
-    width: fit-content !important;
     margin-left: auto;
     margin-right: auto;
   }

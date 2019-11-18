@@ -79,7 +79,10 @@ main
       padding-bottom: 10px
       border-bottom: 1px solid #aaa
       border-radius: 0
+      .p-info
+        padding: 5px
   .inbox-header
+    position: relative
     height: fit-content
     border-bottom: 1px solid #aaa
     padding-bottom: 5px
@@ -117,8 +120,8 @@ main
         &::before
           @include before-2-on
   .chat-box-container
-    margin-top: 4%
-    height: 100%
+    height: 87%
+    overflow-y: scroll
     .pp
       border-radius: 100%
       overflow: hidden
@@ -153,8 +156,14 @@ main
       svg
         background-color: transparent
         fill: white
+
 .ms-section
   max-width: 100%
+
+.chat-board-link
+  right: 0
+  top: 0
+  margin-right: 4px
 
 @media only screen and (max-width : 800px)
   .inbox
@@ -164,7 +173,7 @@ main
     display: none !important
 
   .personal-container
-    margin-top: 80px
+    margin-top: 35px
     padding: 0
     max-width: 472px
     svg
