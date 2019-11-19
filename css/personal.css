@@ -4,7 +4,6 @@
 }
 .main-section .ms-article, .main-section .ms-section {
   max-height: 555px;
-  width: 100%;
   max-width: 100%;
 }
 .main-section img, .main-section .layer {
@@ -79,6 +78,27 @@
   fill: white;
   padding: 5px;
   background-color: #4e50b8;
+}
+
+.header-mid a:link, .header-mid a:active, .header-mid a:visited {
+  text-decoration: none;
+}
+
+.header-purple {
+  color: #4e50b8;
+  font-weight: bolder;
+  font-size: 36px;
+}
+
+.header-orange {
+  color: #f0916e;
+  font-weight: bolder;
+  text-transform: lowercase;
+  font-size: 36px;
+}
+
+.header-brand {
+  display: flex;
 }
 
 @media only screen and (max-width: 800px) {

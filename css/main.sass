@@ -59,6 +59,7 @@ header
   font-size: $fs
   padding: 1% 4%
   background-color: white
+  display: flex
   span
     height: 16px
     margin-right: 9px
@@ -107,6 +108,8 @@ main
   max-height: 555px
   background-color: white
   padding: 10px
+  margin-left: 20px
+  margin-right: 20px
   .ms-article
     width: 100%
     max-width: 400px
@@ -115,10 +118,15 @@ main
       width: 100%
       max-width: 376px
       max-height: 485px
+
 .aside-left
+  min-width: 197px
   svg
     @include svg-20
     background-color: transparent
+
+.aside-right
+  min-width: 224px
 
 .left-header
   padding: 10px
@@ -332,8 +340,25 @@ h2, h3, h6
   padding: 0
   border-width: 0
 
+.header-mid
+  a:link, a:active, a:visited
+    text-decoration: none
+
+.header-purple
+  color: $purple
+  font-weight: bolder
+  font-size: $fs*3
+.header-orange
+  color: $orange
+  font-weight: bolder
+  text-transform: lowercase
+  font-size: $fs*3
+
+.header-brand
+  display: flex
+
 @media only screen and (max-width : 800px)
-  section
+  .container_12, .grid_8
     width: 100% !important
     max-width: 100% !important
   main

@@ -14,6 +14,7 @@ header {
   font-size: 12px;
   padding: 1% 4%;
   background-color: white;
+  display: flex;
 }
 header span {
   height: 16px;
@@ -81,6 +82,8 @@ main img, main .layer {
   max-height: 555px;
   background-color: white;
   padding: 10px;
+  margin-left: 20px;
+  margin-right: 20px;
 }
 .main-section .ms-article {
   width: 100%;
@@ -93,6 +96,9 @@ main img, main .layer {
   max-height: 485px;
 }
 
+.aside-left {
+  min-width: 197px;
+}
 .aside-left svg {
   width: 25px;
   height: 25px;
@@ -101,6 +107,10 @@ main img, main .layer {
   background-color: white;
   fill: #aaa;
   background-color: transparent;
+}
+
+.aside-right {
+  min-width: 224px;
 }
 
 .left-header {
@@ -407,8 +417,29 @@ h2, h3, h6 {
   border-width: 0;
 }
 
+.header-mid a:link, .header-mid a:active, .header-mid a:visited {
+  text-decoration: none;
+}
+
+.header-purple {
+  color: #4e50b8;
+  font-weight: bolder;
+  font-size: 36px;
+}
+
+.header-orange {
+  color: #f0916e;
+  font-weight: bolder;
+  text-transform: lowercase;
+  font-size: 36px;
+}
+
+.header-brand {
+  display: flex;
+}
+
 @media only screen and (max-width: 800px) {
-  section {
+  .container_12, .grid_8 {
     width: 100% !important;
     max-width: 100% !important;
   }

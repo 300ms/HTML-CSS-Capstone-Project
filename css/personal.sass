@@ -15,7 +15,6 @@ $gray: #414064
   max-height: 555px
   .ms-article, .ms-section
     max-height: 555px
-    width: 100%
     max-width: 100%
   img, .layer
     height: 520px
@@ -75,6 +74,23 @@ $gray: #414064
     fill: white
     padding: 5px
     background-color: $purple
+
+.header-mid
+  a:link, a:active, a:visited
+    text-decoration: none
+
+.header-purple
+  color: $purple
+  font-weight: bolder
+  font-size: $fs*3
+.header-orange
+  color: $orange
+  font-weight: bolder
+  text-transform: lowercase
+  font-size: $fs*3
+
+.header-brand
+  display: flex
 
 @media only screen and (max-width : 800px)
   .main-section
