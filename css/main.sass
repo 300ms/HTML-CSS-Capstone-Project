@@ -1,0 +1,420 @@
+$font: 'Montserrat', sans-serif
+$fs: 12px
+$purple: #4e50b8
+$orange: #f0916e
+$gray: #414064
+
+@mixin pc-media-q
+  display: flex
+  flex-direction: column
+  position: absolute
+
+@mixin pp-images
+  width: 40px
+  height: 40px
+
+@mixin svg-30
+  width: 30px
+  height: 30px
+  background-color: white
+  border: 0
+  fill: #aaa
+
+@mixin svg-20
+  width: 25px
+  height: 25px
+  border: 0
+  border-radius: 0
+  background-color: white
+  fill: #aaa
+
+@mixin page-section
+  margin-top: 8%
+  background-color: white
+  padding: 8px
+
+@mixin l-buttons
+  width: 45px
+  height: 45px
+  border: 0
+  border-radius: 5px
+
+@mixin s-buttons
+  width: 40px
+  height: 40px
+  border: 0
+  background-color: white
+  border-radius: 5px
+
+*
+  box-sizing: border-box
+
+html,
+body
+  font-family: $font
+  font-size: $fs
+  background-color: #ddd
+  text-transform: capitalize
+header
+  font-size: $fs
+  padding: 1% 4%
+  background-color: white
+  display: flex
+  span
+    height: 16px
+    margin-right: 9px
+  .location-label
+    color: #aaa
+
+.brand-logo
+  width: 120px
+  height: 40px
+
+.header-buttons
+  width: 20px
+  height: 20px
+  margin: 0 9px 0 0
+  padding: 0
+  border-width: 0
+  svg
+    @include svg-20
+.media-button
+  display: none
+
+.notifications-button
+  margin-left: 1px
+
+main
+  justify-content: space-between
+  padding: 10px 20px
+  height: fit-content
+  font-size: $fs
+  *
+    border-radius: 10px
+  img, .layer
+    width: 100%
+    height: 100%
+
+.pp
+  @include pp-images
+
+
+.profile-button
+  margin-left: 7px
+
+.main-section
+  width: fit-content
+  max-width: 400px
+  max-height: 555px
+  background-color: white
+  padding: 10px
+  margin-left: 20px
+  margin-right: 20px
+  .ms-article
+    width: 100%
+    max-width: 400px
+    max-height: 500px
+    img, .layer
+      width: 100%
+      max-width: 376px
+      max-height: 485px
+
+.aside-left
+  min-width: 197px
+  svg
+    @include svg-20
+    background-color: transparent
+
+.aside-right
+  min-width: 224px
+
+.left-header
+  padding: 10px
+  background-color: white
+  min-height: 110px
+.left-section
+  padding: 10px
+  background-color: white
+  margin-top: 20px
+  .oc-ul
+    height: 385px
+    .al-lis
+      margin: 0
+.p-info
+  padding: 2%
+  span
+    span
+      color: $purple
+      font-weight: 600
+  .name
+    color: #000
+    font-weight: 600
+
+.status
+  color: #aaa
+  font-size: 8px
+
+.al-lower
+  margin-top: 4%
+  .like-div
+    width: 15%
+    min-width: 40px
+    font-weight: 600
+    svg
+      margin-right: 5px
+
+.al-lis
+  margin-bottom: 8%
+  font-weight: 600
+  span
+    color: #aaa
+    margin: 0 10px
+
+.premium-div
+  margin-left: 10%
+  min-width: 100px
+  min-height: 30px
+  .premium-button
+    background-color: $purple
+    color: white
+    font-weight: 400
+    border: 0
+    margin: 0
+    width: 100%
+    height: 100%
+    img
+      width: 15px
+      height: 15px
+
+.contacts
+  padding: 0
+  overflow: auto
+  max-width: 376px
+  &::-webkit-scrollbar
+    display: none
+  li
+    margin-right: 2%
+.ms-section
+  max-height: 485px
+  max-width: 365px
+.ms-article
+  position: relative
+  max-width: 376px
+  max-height: 485px
+  .layer
+    position: absolute
+    width: 100%
+    height: 100%
+    top: 0
+    left: 0
+    padding: 5%
+    font-weight: 600
+    color: white
+  img
+    width: 100%
+    height: 100%
+    max-height: 485px
+    max-width: 365px
+  svg
+    @include svg-20
+    background-color: transparent
+    fill: white
+    margin-right: 5px
+  .slide-list
+    list-style-type: square
+  .lower-mid
+    margin: 0 20%
+  .layer-lower
+    .lower-left, .lower-right
+      background-color: transparent
+      button
+        @include s-buttons
+        outline: 0
+        svg
+          fill: #aaa
+    .lower-mid
+      background-color: transparent
+      svg
+        margin: 0
+      .lower-mid-left
+        button
+          @include l-buttons
+          background-color: $purple
+          margin: 0
+      .lower-mid-right
+        button
+          @include l-buttons
+          background-color: $orange
+
+.additional-1
+  width: 30px
+  border-radius: 5px
+  color: #aaa
+
+.additional-2
+  width: 30px
+  background-color: $orange
+  border-radius: 5px
+  color: white
+
+.right-header
+  background-color: white
+  padding: 10px
+  .pp
+    flex: 0 0 auto
+  .premium-div
+    margin: 0
+  .right-info
+    padding: 0 6%
+    h5
+      font-weight: 600
+    span
+      font-size: 10px
+      color: #aaa
+      padding: 3px 0
+      text-transform: none
+
+.filter-search
+  @include page-section
+  svg
+    @include svg-30
+    fill: $purple
+    margin-right: 10px
+
+.personal-container
+  background-color: white
+  margin-top: 8%
+  padding: 10px
+  svg
+    @include svg-30
+    fill: $purple
+    margin-right: 10px
+  span
+    text-transform: capitalize
+  .label
+    display: block
+    font-size: 10px
+    color: #aaa
+    margin-top: 10px
+  .personal-2
+    margin-top: 8%
+  .location-purple
+    svg
+      @include svg-20
+      border-radius: 5px
+      background-color: $purple
+.view-person
+  margin-top: 8%
+  color: #aaa
+
+.gift-div
+  @include page-section
+  .gift-info
+    font-size: 10px
+    color: #aaa
+  h5
+    font-size: 12px
+    font-weight: 600
+  img
+    @include pp-images
+    margin-right: 10px
+
+.previous, .next
+  display: none
+
+.pc-media, .pc-media-2
+  display: none
+
+.add-friend
+  svg
+    fill: $orange
+h2, h3, h6
+  display: none
+
+.chat-board-link
+  position: absolute
+  float: left
+  width: 20px
+  height: 20px
+  margin: 0 9px 0 0
+  padding: 0
+  border-width: 0
+
+.header-mid
+  a:link, a:active, a:visited
+    text-decoration: none
+
+.header-purple
+  color: $purple
+  font-weight: bolder
+  font-size: $fs*3
+.header-orange
+  color: $orange
+  font-weight: bolder
+  text-transform: lowercase
+  font-size: $fs*3
+
+.header-brand
+  display: flex
+
+@media only screen and (max-width : 800px)
+  .container_12, .grid_8
+    width: 100% !important
+    max-width: 100% !important
+  main
+    flex-wrap: wrap
+    flex-direction: column
+    justify-content: flex-start
+    .main-section
+      margin-left: auto
+      margin-right: auto
+  .aside-left, .aside-right
+    display: none
+  .layer-lower, .view-person
+    display: none !important
+  .aside-right
+    .right-header, .filter-search, .gift-div
+      display: none !important
+    .personal-container
+      display: none
+  .media-button
+    display: inline-flex
+  header
+    .location-label, .location-button, .location-var, .location-svg, .messages-button, .profile
+      display: none !important
+  .ms-section
+    position: relative
+  .pc-media
+    @include pc-media-q
+    bottom: -50px
+    left: 5%
+    background-color: white
+    width: 90%
+    padding: 15px
+    z-index: 9999
+    .personal-2
+      margin-top: 0
+
+  .pc-media-2
+    display: flex
+    margin-top: 80px
+    background-color: white
+    width: 100%
+    z-index: 9999
+    .personal-1
+      width: 100%
+      justify-content: space-between
+      padding: 10px 20px
+      svg
+        fill: #aaa
+      .special-mobile
+        svg
+          width: 54px
+          height: 54px
+          fill: white
+          background-color: $purple
+          border-radius: 8px
+          position: relative
+          top: -30px
+    .personal-2
+      margin-top: 0

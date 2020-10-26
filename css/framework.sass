@@ -1,0 +1,95 @@
+$min-width: 100%
+$padding-left: 80px
+$width: 8.33333vw
+
+body 
+    min-width: $min-width
+
+.container_12 
+  margin-left: auto
+  margin-right: auto
+  width: $min-width
+
+.grid_1,
+.grid_2,
+.grid_3,
+.grid_4,
+.grid_5,
+.grid_6,
+.grid_7,
+.grid_8,
+.grid_9,
+.grid_10,
+.grid_11,
+.grid_12 
+  display: inline
+  float: left
+  margin: 0
+
+.push_1, .pull_1,
+.push_2, .pull_2,
+.push_3, .pull_3,
+.push_4, .pull_4,
+.push_5, .pull_5,
+.push_6, .pull_6,
+.push_7, .pull_7,
+.push_8, .pull_8,
+.push_9, .pull_9,
+.push_10, .pull_10,
+.push_11, .pull_11 
+  position: relative
+
+.alpha 
+  margin-left: 0
+
+.omega 
+  margin-right: 0
+
+@for $i from 1 through 12
+    .container_12 .grid_#{$i}
+        width:  $i * $width
+
+@for $i from 1 to 12
+    .container_12 .prefix_#{$i}
+        padding-left:  $padding-left * $i
+
+@for $i from 1 to 12
+    .container_12 .suffix_#{$i}
+        padding-right:  $padding-left * $i
+
+@for $i from 1 to 12
+    .container_12 .push_#{$i}
+        left:  $padding-left * $i
+
+@for $i from 1 to 12
+    .container_12 .pull_#{$i}
+        left:  $padding-left * $i * -1
+
+.clear 
+  clear: both
+  display: block
+  overflow: hidden
+  visibility: hidden
+  width: 0
+  height: 0
+
+.clearfix:before,
+.clearfix:after,
+.container_12:before,
+.container_12:after 
+  content: '.'
+  display: block
+  overflow: hidden
+  visibility: hidden
+  font-size: 0
+  line-height: 0
+  width: 0
+  height: 0
+
+.clearfix:after,
+.container_12:after 
+  clear: both
+
+.clearfix,
+.container_12 
+  zoom: 1

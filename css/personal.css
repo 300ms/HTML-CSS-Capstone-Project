@@ -1,0 +1,125 @@
+.main-section {
+  max-width: 400px;
+  max-height: 555px;
+}
+.main-section .ms-article, .main-section .ms-section {
+  max-height: 555px;
+  max-width: 100%;
+}
+.main-section img, .main-section .layer {
+  height: 520px;
+  max-height: 550px;
+  width: 100%;
+  max-width: 100%;
+}
+
+.aside-right {
+  max-width: 300px;
+  height: 100%;
+}
+.aside-right .personal-container {
+  margin-top: 0;
+}
+.aside-right .personal-container .personal-1 {
+  margin-top: 0;
+}
+.aside-right .personal-container .personal-2 {
+  margin-top: 10px;
+}
+.aside-right .personal-container .gift-div {
+  margin-top: 10px;
+}
+.aside-right .al-lower {
+  width: 100%;
+}
+.aside-right .al-lower .premium-div {
+  margin-left: 0;
+}
+.aside-right .al-lower .premium-div span {
+  font-size: 12px;
+  font-weight: 600;
+}
+.aside-right .videos-div {
+  margin-top: 10px;
+}
+.aside-right .videos-div .vh-count, .aside-right .videos-div .vh-show-all {
+  color: #aaa;
+}
+.aside-right .videos-div .videos {
+  margin-top: 10px;
+}
+.aside-right .videos-div .videos .vid-1, .aside-right .videos-div .videos .vid-2, .aside-right .videos-div .videos .vid-3 {
+  height: 50px;
+  max-width: 28%;
+}
+.aside-right .verified-accounts {
+  margin-top: 10px;
+}
+.aside-right .verified-accounts .user-photo {
+  margin-top: 10px;
+}
+
+.vh-header, .ns {
+  font-weight: 600;
+}
+
+#f-icon svg {
+  fill: #475993;
+  background-color: white;
+}
+
+#gp-icon svg {
+  fill: #DD4B39;
+  background-color: white;
+}
+
+.svg-purple svg {
+  margin: 0;
+  fill: white;
+  padding: 5px;
+  background-color: #4e50b8;
+}
+
+.header-mid a:link, .header-mid a:active, .header-mid a:visited {
+  text-decoration: none;
+}
+
+.header-purple {
+  color: #4e50b8;
+  font-weight: bolder;
+  font-size: 36px;
+}
+
+.header-orange {
+  color: #f0916e;
+  font-weight: bolder;
+  text-transform: lowercase;
+  font-size: 36px;
+}
+
+.header-brand {
+  display: flex;
+}
+
+@media only screen and (max-width: 800px) {
+  .main-section {
+    margin-right: auto !important;
+  }
+  .main-section .layer-lower {
+    display: flex !important;
+  }
+
+  .aside-right {
+    width: 100% !important;
+    max-width: 396px;
+    margin-left: auto;
+  }
+  .aside-right .personal-container {
+    display: block !important;
+  }
+  .aside-right .personal-container .personal-3 .verified-accounts {
+    margin-top: 30px;
+  }
+}
+
+/*# sourceMappingURL=personal.css.map */
